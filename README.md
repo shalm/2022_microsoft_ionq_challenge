@@ -19,7 +19,7 @@ Original Bitcoin Whitepaper (awesome paper, highly recommended)
 https://bitcoin.org/bitcoin.pdf [4]
 Hashcash Diagram:
 
-![alt text](images/Fig_1)
+![alt text](https://github.com/shalm/2022_microsoft_ionq_challenge/1.png)
 
 
 							Fig 1
