@@ -99,8 +99,12 @@ We wrote a script for collecting statistics on the agreement between qPoW run us
 References 
 
 [1] https://assets.pubpub.org/xi9h9rps/01581688887859.pdf
+
 [2] https://ccaf.io/cbeci/index
+
 [3] https://www.youtube.com/watch?v=bBC-nXj3Ng4&ab_channel=3Blue1Brown
+
 [4] https://bitcoin.org/bitcoin.pdf
+
 [5] https://arxiv.org/abs/1905.10876
 
