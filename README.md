@@ -19,12 +19,13 @@ Original Bitcoin Whitepaper (awesome paper, highly recommended)
 https://bitcoin.org/bitcoin.pdf [4]
 Hashcash Diagram:
 
-![alt text](https://github.com/shalm/2022_microsoft_ionq_challenge/1.png)
+<img alt="alt_text" src="1.png" width="2000" />
 
 
 							Fig 1
 qPoW Diagram:
-![alt text](images/Fig_2)
+
+<img alt="alt_text" src="2.png" width="2000"/>
 
 							Fig 2
 
@@ -46,17 +47,16 @@ Quantum Circuit Selection
 We started the most expressive circuit from [5], number 6 in Fig 3 below, in order to increase our chances of simulation agreeing with hardware results, however, we found empirically that a modification of the position of one layer of Rz gates, seen in Fig 4; gave better agreement between simulation and experiment, see Fig 5 and 6. We hypothesize that this is related to the physical topology differences between the QC used in [5] and the IonQ and IBM QCs we tested. 
 
 
-![alt text](images/Fig_3)
-						Fig 3
+<img alt="alt_text" src="3.png" width="2000"/>						Fig 3
 
-![alt text](images/Fig_4)
+<img alt="alt_text" src="4.png"width="2000" />
 						Fig 4
 
-![alt text](images/Fig_5)
+<img alt="alt_text" src="5.png"width="2000" />
 
 					Fig 5: Original Circuit from Fig 3
 
-![alt text](images/Fig_6)
+<img alt="alt_text" src="6.png" width="2000" />
 Fig 6: Modified Circuit from Fig 4 results on IBM
 
 This approach has the weakness that verification is completely dependent on the highest probability result of simulation completely agreeing with the highest probability result of the experiment. An approach based on solving optimization problems (detailed below) may offer some advantages from the perspective of verification. 
@@ -90,8 +90,8 @@ Successfully Mining Blocks!
 
 We were able to mine qPoW blocks successfully using the IonQ simulator. With a difficulty of 1, the mining time was ~386 seconds.
 
-					
-![alt text](images/Fig_7)
+<img alt="alt_text" src="7.png" width="2000" />
+
 Fig 7 Mined block, showing the nonce and the histogram of the quantum computation
 Next Steps
 
