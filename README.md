@@ -49,10 +49,10 @@ We started the most expressive circuit from [5], number 6 in Fig 3 below, in ord
 
 <img alt="alt_text" src="3.png" width="2000"/>						Fig 3
 
-<img alt="alt_text" src="4.png"width="2000" />
+<img alt="alt_text" src="4.png" width="2000" />
 						Fig 4
 
-<img alt="alt_text" src="5.png"width="2000" />
+<img alt="alt_text" src="5.png" width="2000" />
 
 					Fig 5: Original Circuit from Fig 3
 
