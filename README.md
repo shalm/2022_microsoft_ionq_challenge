@@ -1,7 +1,7 @@
-README
+**README**
 
 
-Introduction: 
+**Introduction:**
 
 Proof of Work is a type of cryptography used in Bitcoin, the main component in Bitcoin mining. It would be nice to make it compatible with quantum computers so that the billions currently spent on mining could be spent on quantum computer manufacturing and research. This would also have the additional benefit of decreasing the energy consumption of the system which, today, is greater than that of some European countries (https://ccaf.io/cbeci/index)[2]. 
 
@@ -11,7 +11,7 @@ Our goal is to develop qPoW, a cryptographic protocol that can be accelerated wi
 
 
 
-Bitcoin PoW
+**Bitcoin PoW**
 Resources: 
 How Bitcoin works (please watch this if you are confused):
 3Blue1Brown breakdown video [3]
@@ -23,24 +23,25 @@ Hashcash Diagram:
 
 
 							Fig 1
-qPoW Diagram:
+**qPoW Diagram:**
 
 <img alt="alt_text" src="2.png" width="2000"/>
 
 							Fig 2
 
 
-Necessary attributes of the Quantum Operation
+**Necessary attributes of the Quantum Operation**
+
 It must have the same cryptographic security as SHA256 from the perspective of Hashcash (the protocol that secures Bitcoin and is colloquially called “mining”). This is achieved by following the same cryptographic construction as oPoW[2], detailed in a diagram below, with a modification to the algorithm that replaced the optical computation block with an alternative and novel quantum computation block. 
 As a rule of thumb, if the ratio of the cost of a GPU to the Quantum Computer is X then the difficulty of performing the qPoW calculation with a GPU must be >X or ideally >10X
 When a “miner” finds a solution or “block” by brute force it must be possible for others to verify the computation using a classical computer, meaning the output of the quantum computation must either agree with simulations or be verifiable to be “acceptable” in some other way.
 This means that if you run qPoW on the QC its results must agree with the verification often enough to be useful. If the computational advantage over a GPU is very high the accuracy may be lower. There is no penalty for producing solutions that don’t verify besides wasted time on the QC. 
 Note that the qPoW operation will be performed many times to mine a block (continuously for 1-10 minutes) but to verify a mined block it only needs to be performed once. However, every node in the network performs the verification so the verification must be relatively inexpensive. 
 
-Options Considered for Quantum Operation
+**Options Considered for Quantum Operation**
 
 
-Randomly Initialized High Expressivity Quantum Circuit 
+**Randomly Initialized High Expressivity Quantum Circuit**
 
 Quantum Circuit Selection
 
@@ -68,7 +69,9 @@ Each “nonce” that is iterated through the qPoW construction must produce a u
 Implementation
 
 We implemented a 4-qubit version of this construction, which can be easily extended to N-qubits.
-Randomly Initialized Impressive Cut
+
+
+**Randomly Initialized Impressive Cut**
 
 This approach was conceptualized but not fully implemented. 
 Working Principle
@@ -85,7 +88,7 @@ It is hard to find an Impressive Cut but easy to verify that a cut is impressive
 We hope to implement this in the near future. 
 
 
-Results
+**Results**
 Successfully Mining Blocks!
 
 We were able to mine qPoW blocks successfully using the IonQ simulator. With a difficulty of 1, the mining time was ~386 seconds.
